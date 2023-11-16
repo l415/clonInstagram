@@ -1,0 +1,1304 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffffff;
+  }
+  
+  nav {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: right;
+  }
+  
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-icon {
+    margin-left: auto; /* Mueve main-icon al extremo derecho */
+  }
+  
+  .main-icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    color: #0e0d0d;
+    line-height: 50px; /* Ajusta la altura de línea para que sea igual a la de main-icon */
+  }
+  
+  a:hover {
+    background-color: #101010;
+    color: #ffffff;
+  }
+  
+  .search-bar {
+    background-color: rgb(235, 235, 235);
+    width: 1500px;
+    padding: 10px;
+    border: #ffffff;
+    border-radius: 15px;
+    color: rgb(15, 14, 14);
+  }
+  
+  .search-bar:hover {
+    cursor: zoom-in; /* Cambia el cursor a una lupa solo cuando está en hover */
+  }
+  
+  .flex-grow {
+    flex-grow: 1;
+  }
+  
+  .flex-icons {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Ajusta el margen derecho para los íconos 1, 2 y 3 */
+  .icon1 img
+  {
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
+    
+  }
+  .flex-icons .icon1:hover{
+
+    background-color: azure;
+  }
+    
+  
+  .icon2 img
+  {
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
+    
+  }
+  .flex-icons .icon2:hover{
+
+    background-color: azure;
+  }
+    
+
+  .icon3 img
+  {
+    align-items: center;
+    width: 75px;
+    height: 75x;
+    margin-right: 20px; /
+  }
+  .flex-icons .icon3:hover{
+
+    background-color: azure;
+  }
+    
+  
+  .flex-icons .arrow:hover{
+color: #101010;
+    background-color: azure;
+  }
+    
+  
+  .arrow {
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  
+  
+  
+  body {
+    margin: 0; 
+  }
+  
+  .responsive-image {
+    padding-left: 1%;
+  height:150%;
+
+    border-radius: 25px;
+    
+  }
+  
+
+  /* ... tus estilos existentes ... */
+
+/* Nuevos estilos para la sección de contenido */
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .column {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .item {
+    padding: 20px;
+    text-align: right;
+    background-color: #f0f0f0;
+  }
+
+
+
+  .item:hover {
+    filter: brightness(70%); /* Ajusta el valor según tus preferencias (0% a 100%) */
+    transition: filter 0.3s ease; /* Agrega una transición suave */
+    cursor: zoom-in;
+    
+   
+  
+    
+
+
+}
+  
+  .item1 { height: 200px; width: 170px; }
+  .item2 { height: 250px; width: 150px; }
+  .item3 { height: 220px; width: 150px }
+  .item4 { height: 160px; }
+  .item5 { height: 190px; width: 150px }
+  .item11 { height: 100px; }
+  .item12 { height: 150px; }
+  .item13 { height: 120px; }
+  .item14 { height: 180px; }
+  .item15 { height: 190px; }
+  .item6 { height: 100px; }
+  .item7 { height: 150px; }
+  .item8 { height: 120px; }
+  .item9 { height: 180px; }
+  .item10 { height: 190px; }
+
+  .column.item.item1{
+    height: 5%;
+  }
+
+  .item.item1 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/07/00006-2273692716.png');
+    background-size: cover;
+    background-position: top;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item1::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item1::after {
+ 
+    content: 'Paisaje';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item1:hover::before,
+  .item.item1:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item1:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item1:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+
+  /*                                       */
+  .item.item2 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00000-3658739768.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item2::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item2::after {
+    content: 'Paisaje';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item2:hover::before,
+  .item.item2:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item2:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item2:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+
+   /*                                       */
+   .item.item3 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00062-3976240297.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item3::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item3::after {
+    content: 'Paisaje';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item3:hover::before,
+  .item.item3:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item3:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item3:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+   /*                                       */
+   .item.item4 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00003-3658739770.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item4::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item4::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item4:hover::before,
+  .item.item4:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item4:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item4:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+   .item.item5 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00003-3658739770.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item5::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item5::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item5:hover::before,
+  .item.item5:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item5:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item5:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  /*                                       */
+  .item.item6 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00199-1575188370.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item6::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item6::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item6:hover::before,
+  .item.item6:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item6:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item6:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item7 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/Imagen-de-WhatsApp-2023-07-05-a-las-11.24.27.jpg');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item7::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item7::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .item.item7:hover::before,
+  .item.item7:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item7:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item7:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item8 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00301-1575188370.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item8::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item8::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item8:hover::before,
+  .item.item8:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item8:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item8:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item9 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00266-1575188372.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item9::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item9::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item9:hover::before,
+  .item.item9:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item9:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item9:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item10 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00267-1575188373.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item10::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item10::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item10:hover::before,
+  .item.item10:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item10:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item10:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item11 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00039-3673558170.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item11::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item11::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item11:hover::before,
+  .item.item11:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item11:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item11:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item12 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00347-1575188374.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item12::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item12::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item12:hover::before,
+  .item.item12:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item12:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item12:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item13 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00223-1575188369.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item13::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item13::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item13:hover::before,
+  .item.item13:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item13:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item13:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item13 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00223-1575188369.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item13::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item13::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item13:hover::before,
+  .item.item13:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item13:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item13:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item14 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00013-2225361951.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item14::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item14::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item14:hover::before,
+  .item.item14:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item14:hover::before {
+    opacity: 10; /* Muestra el botón en hover *17
+  }
+  
+  .item.item14:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+
+     /*                                       */
+     .item.item15 {
+      position: relative;
+      background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00004-1108522970.png');
+      background-size: cover;
+      height: auto;
+      background-position: center;
+      color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+      cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+    }
+  
+  .item.item15::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item15::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item15:hover::before,
+  .item.item15:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item15:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item15:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+
+     /*                                       */
+  .item.item16 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00012-3881123500.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item16::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item16::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item16:hover::before,
+  .item.item16:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item16:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item16:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item17 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00371-1575188370.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item17::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item17::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item17:hover::before,
+  .item.item17:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item17:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item17:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item18 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00006-2472307408.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item18::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item18::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item18:hover::before,
+  .item.item18:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item18:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item18:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item19 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00373-1575188372.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item19::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item19::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item19:hover::before,
+  .item.item19:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item19:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item19:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+     /*                                       */
+  .item.item20 {
+    position: relative;
+    background-image: url('https://introgenesis.com/wp-content/uploads/2023/11/00286-1575188372.png');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+    cursor: zoom-in; /* Cambia el cursor a una lupa por defecto */
+  }
+  
+  .item.item20::before {
+    content: 'Guardar';
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: #f70101; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+
+  }
+  
+  .item.item20::after {
+    content: 'Perrito';
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .item.item20:hover::before,
+  .item.item20:hover::after {
+    display: block; /* Muestra el botón y el texto en hover */
+  }
+  
+  .item.item20:hover::before {
+    opacity: 10; /* Muestra el botón en hover */
+  }
+  
+  .item.item20:hover::after {
+    opacity: 0.8; /* Muestra el texto en hover */
+  }
+  
+   /*                                       */
+   
